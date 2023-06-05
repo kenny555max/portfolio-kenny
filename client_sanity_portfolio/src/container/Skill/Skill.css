@@ -1,0 +1,51 @@
+.app__skill__experience {
+  background-color: var(--bg-white);
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app__skill__experience .app__skill-title {
+  text-align: center;
+  font-family: var(--font-base);
+}
+
+.app__skill__experience .app__skill-display {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .app__skill__experience .app__skill-display {
+    flex-direction: column;
+    row-gap: 4rem;
+  }
+}
+
+.app__skill__experience .app__skill-display .app__skill-logo {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 2rem;
+}
+
+.app__skill__experience .app__skill-display .app__skill-logo div {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.app__skill__experience .app__skill-display .app__skill-logo div img {
+  width: 50%;
+  height: 50%;
+}
+
+.app__skill__experience .app__skill-display .app__experiences {
+  flex: 1;
+}

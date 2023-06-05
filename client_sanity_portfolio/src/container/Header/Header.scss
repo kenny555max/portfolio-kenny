@@ -1,0 +1,129 @@
+.app__header{
+    display: flex;
+    justify-content: space-evenly;
+    background: url('../../assets/bgIMG.png');
+    background-position: center;
+    background-size: cover;
+    font-family: var(--font-base);
+    color: var(--gray-color);
+    height: 100vh;
+    
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding-bottom: 8rem;
+
+        .app__profile-title{
+            margin-bottom: 2rem;
+        }
+
+        .app__profile-skill{
+            flex-direction: row !important;
+            
+            div{
+
+                &:nth-child(2) {
+                    margin: 4rem 8rem 0 8rem !important;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .app__profile-skill{
+            margin-top: .5rem;
+    
+            div{
+                &:nth-child(2) {
+                    margin: 1rem 4rem 0 4rem !important;
+                }
+            }
+        }
+        
+    }
+
+    .app__profile-title{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 8rem;
+
+        div{
+            background-color: #fff;
+            padding: 20px 40px;
+            text-align: right;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            text-align: center;
+
+            h1{
+                color: #000;
+                font-size: 3rem;
+            }
+
+            &:nth-child(2){
+                margin-top: 40px;
+                text-transform: uppercase;
+                line-height: 1.5;
+            }
+        }
+    }
+    
+    .app__profile-image{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        position: relative;
+        
+        .profile{
+            position: relative;
+            z-index: 2;
+        }
+
+        .circle{
+            position: absolute;
+            bottom: 10%;
+            z-index: 1;
+            right: 0;
+        }
+    }
+
+    .app__profile-skill{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 4rem 0 0 1rem;
+        align-items: start;
+        flex: 1;
+
+        div{
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+
+            img{
+                width: 70%;
+                height: 70%;
+            }
+            
+            &:nth-child(1){
+                width: 100px;
+                height: 100px;
+            }
+            &:nth-child(2){
+                width: 150px;
+                height: 150px;
+                margin: 8rem 0 8rem 2rem;
+            }
+            &:nth-child(3){
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,139 @@
+.app__work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 0;
+    font-family: var(--font-base);
+    background-color: var(--primary-color);
+
+    .app__work-title{
+        h1{
+            font-size: 3rem;
+            text-transform: capitalize;
+
+            span{
+                color: var(--secondary-color);
+            }
+        }
+    }
+
+    ul{
+        display: flex;
+        margin-top: 3rem;
+        flex-wrap: wrap;
+
+        li{
+            font-weight: bold;
+            background-color: var(--white-color);
+            color: var(--secondary-color);
+            margin: 0 10px;
+            padding: .6rem 1.2rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.5s ease-out;
+
+            &.item-active{
+                background-color: var(--secondary-color);
+                color: var(--white-color);
+            }
+            
+            &:hover{
+                background-color: var(--secondary-color);
+                color: var(--white-color);
+            }
+        }
+    }
+
+    .app__work-display{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+        gap: 5rem;
+
+        @media screen and (max-width: 1200px) {
+            width: 100% !important;
+        }
+        
+        .app__work__card{
+            background-color: var(--white-color);
+            border-radius: 10px;
+            width: 300px;
+
+            .app__work-image{
+                padding: 1rem;
+
+                div{
+                    height: 300px;
+                    position: relative;
+                    
+                    img{
+                        object-fit: cover;
+                        border-radius: 10px;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    &:hover{
+                        .app__work__icon-links{
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+
+                    .app__work__icon-links{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        color: var(--white-color);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        column-gap: 2rem;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all 0.5s ease-out;
+
+                        a{
+                            background-color: rgba(0, 0, 0, 0.6);
+                            color: var(--white-color);
+                            display: block;
+                            width: 50px;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 100%;
+
+                            svg{
+                                font-size: 1.5rem;
+                            }
+                        }
+
+                    }
+                }
+
+                .app__work-tag{
+                    background-color: var(--white-color);
+                    position: absolute;
+                    bottom: 0;
+                    padding: .6rem 1rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: .5rem .5rem 0 0;
+                    color: var(--gray-color);
+                    z-index: 1000;
+                }
+            }
+
+            .app__work-desc{
+                padding: 1.2rem;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.app__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 0;
+  font-family: var(--font-base);
+}
+
+.app__about .app__about-title h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.app__about .app__about-title h1 span {
+  color: var(--secondary-color);
+}
+
+.app__about .app__about-display {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 991px) {
+  .app__about .app__about-display {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app__about .app__about-display {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .app__about .app__about-display {
+    flex-direction: column;
+  }
+  .app__about .app__about-display div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .app__about .app__about-display div .app__about-image {
+    width: 100% !important;
+    height: 450px;
+  }
+}
+
+.app__about .app__about-display div {
+  flex: 0.22;
+  height: auto;
+  border-radius: 20px;
+}
+
+.app__about .app__about-display div .app__about-image {
+  height: 250px;
+  width: 250px;
+}
+
+.app__about .app__about-display div .app__about-image img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app__about .app__about-display div .app__about-desc {
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+.app__about .app__about-display div .app__about-desc h2 {
+  text-transform: capitalize;
+}
