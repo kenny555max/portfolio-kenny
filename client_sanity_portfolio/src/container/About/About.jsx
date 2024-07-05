@@ -17,7 +17,6 @@ const About = () => {
     getAbout();
   }, []);
 
-
   return (
     <div className="app__about">
       <div className="app__about-title app__title">

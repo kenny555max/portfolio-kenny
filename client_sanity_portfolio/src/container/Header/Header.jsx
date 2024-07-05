@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { profile, circle, flutter, sass, redux } from '../../constants';
+import { profile, circle, react, node, redux } from '../../constants';
 import Wrap from '../../Wrap/Wrap';
 import './Header.scss';
 
@@ -22,7 +22,7 @@ const Header = () => {
           }}
         >
           <p>Hello I am</p>
-          <h1><span>👋</span> Micael</h1>
+          <h1><span>👋</span> Kehinde</h1>
         </motion.div>
         <motion.div
           initial={{
@@ -67,7 +67,7 @@ const Header = () => {
         </motion.div>
       </div>
       <div className='app__profile-skill'>
-        {[flutter, redux, sass].map(skill => {
+        {[react, redux, node].map(skill => {
           return (
             <motion.div
               key={skill}

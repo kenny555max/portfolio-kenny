@@ -9,7 +9,7 @@ import { FaGithub, FaEye } from 'react-icons/fa';
 import './Work.scss';
 
 const Work = () => {
-    const [active, setActive] = useState('Mobile App');
+    const [active, setActive] = useState('All');
     const [works, setWorks] = useState([]);
     const [animate, setAnimate] = useState({ y: 0, opacity: 1 });
 
@@ -45,7 +45,7 @@ const Work = () => {
                 <h1>my creative <span>portfolio</span> section</h1>
             </div>
             <ul className='app__work-lists app__list-style'>
-                {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map(workLink => {
+                {['NestJs', 'Web App', 'ExpressJs', 'React JS', 'All'].map(workLink => {
                     return(
                         <li
                             className={active === workLink ? 'item-active' : ''}
@@ -59,6 +59,7 @@ const Work = () => {
             </ul>
             <div className='app__work-display app__container'>
                 {works.map(({ codeLink, projectLink, title, description, imgUrl }, index) => {
+                    console.log(codeLink);
                     return (
                         <motion.div
                             className='app__work__card'
@@ -80,6 +81,7 @@ const Work = () => {
                                     <div className='app__work__icon-links'>
                                         <motion.a
                                             href={projectLink}
+                                            target="_blank"
                                             className='app__links'
                                             whileInView={{ scale: 1 }}
                                             whileHover={{ scale: [1, 0.90] }}
@@ -91,7 +93,8 @@ const Work = () => {
                                             <FaEye />
                                         </motion.a>
                                         <motion.a
-                                            href="#"
+                                            href={codeLink}
+                                            target="_blank"
                                             className='app__links'
                                             whileInView={{ scale: 1 }}
                                             whileHover={{ scale: [1, 0.90] }}
