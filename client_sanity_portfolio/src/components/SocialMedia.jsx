@@ -9,17 +9,20 @@ const SocialMedia = () => {
                     <motion.div
                         initial={{
                             backgroundColor: '#fff',
-                            color: 'var(--black-color)'
+                            color: 'var(--black-color)',
+                            display: 'block'
                         }}
                         whileHover={{
                             backgroundColor: 'var(--secondary-color)',
-                            color: 'var(--white-color)'
+                            color: 'var(--white-color)',
+                            display: 'block'
                         }}
                         transition={{
                             duration: 0.5,
                             ease: 'easeInOut',
                             type: 'tween'
                         }}
+                        onClick={() => window.location = 'https://www.linkedin.com/in/kehinde-adams-oyedepo-946665185/'}
                         key={Icon}
                     >
                         <Icon />

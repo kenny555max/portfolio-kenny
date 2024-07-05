@@ -74,6 +74,31 @@ const Skill = () => {
                 y: 100,
                 opacity: 0
               }}
+              style={{
+                display: 'flex',
+                columnGap: '2rem',
+                marginBottom: '2rem'
+              }}
+              whileInView={{
+                y: 0,
+                opacity: 1
+              }}
+              transition={{
+                duration: 0.5,
+                ease: 'easeOut'
+              }}
+            >
+              <h3>2021</h3>
+              <div>
+                <h3>FrontEnd Engineer</h3>
+                <small>FREELANCE</small>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{
+                y: 100,
+                opacity: 0
+              }}
               whileInView={{
                 y: 0,
                 opacity: 1
@@ -90,8 +115,8 @@ const Skill = () => {
             >
               <h3>2022</h3>
               <div>
-                <h3>seniro product designer</h3>
-                <small>amazon inc</small>
+                <h3>Software Development Instructor</h3>
+                <small>GOMYCODE</small>
               </div>
             </motion.div>
             <motion.div
@@ -113,19 +138,11 @@ const Skill = () => {
                 ease: 'easeOut'
               }}
             >
-              <h3>2020</h3>
+              <h3>2023</h3>
               <div>
                 <div>
-                  <h3>seniro product designer</h3>
-                  <small>amazon inc</small>
-                </div>
-                <div>
-                  <h3>seniro product designer</h3>
-                  <small>amazon inc</small>
-                </div>
-                <div>
-                  <h3>seniro product designer</h3>
-                  <small>amazon inc</small>
+                  <h3>Full-Stack Engineer</h3>
+                  <small>Optisoft Ltd</small>
                 </div>
                </div> 
             </motion.div>
@@ -149,8 +166,8 @@ const Skill = () => {
             >
               <h3>2022</h3>
               <div>
-                <h3>seniro product designer</h3>
-                <small>amazon inc</small>
+                <h3>FrontEnd Engineer</h3>
+                <small>PAYBUYMAX</small>
               </div>
             </motion.div>
           </div>

@@ -1,8 +1,9 @@
 import './Testimonials.scss';
 
 import Wrap from '../../Wrap/Wrap';
-import { client, urlFor } from '../../client/client';
-import { asus, amazon, skype, nb, spotify, adidas } from '../../constants'
+import { client } from '../../client/client';
+//import { client, urlFor } from '../../client/client';
+//import { asus, amazon, skype, nb, spotify, adidas } from '../../constants'
 import { HiChevronRight, HiChevronLeft } from 'react-icons/hi';
 import { useEffect, useState } from 'react';
 
@@ -54,11 +55,13 @@ const Testimonials = () => {
                     <HiChevronRight onClick={() => setCurrentIndex((currentIndex) => currentIndex === testimonial.length - 1 ? 0 : currentIndex + 1)}  />
                 </div>
             </div>
+            {/**
             <div className="logos">
                 {[ asus, amazon, skype, nb, spotify, adidas ].map((logo, index) => (
                     <img src={logo} key={index} alt="logo" />
                 ))}
             </div>
+            */}
         </div>
     )
 }
