@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Navbar.scss';
 import { motion } from 'framer-motion';
-import logo from '../../assets/logo.png';
+import logo from '../../../public/logo4.svg';
 import { CgMenuRight } from 'react-icons/cg'
 import { FaTimes } from 'react-icons/fa';
 
@@ -16,8 +16,11 @@ const Navbar = () => {
         transition={{ duration: 2 }}
         className='app__logo-wrap'
       >
-        <h1>
-          <img src={logo} alt="logo" />
+        <h1 style={{
+          width: "60px",
+          height: "60px",
+        }}>
+          <img width="100%" height="100%" src={logo} alt="logo" />
         </h1>
       </motion.div>
       <ul className='app_lists app__list-style app__flex app__links__full__screen'>
