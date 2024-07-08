@@ -1,4 +1,4 @@
-export { default as profile } from '../assets/profile.png';
+export { default as profile } from '../assets/profile2.png';
 export { default as circle } from '../assets/circle.svg';
 export { default as about1 } from '../assets/about01.png';
 export { default as about2 } from '../assets/about02.png';

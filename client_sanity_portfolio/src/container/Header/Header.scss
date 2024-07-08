@@ -7,6 +7,7 @@
     font-family: var(--font-base);
     color: var(--gray-color);
     height: 100vh;
+    overflow: hidden;
     
     @media screen and (max-width: 1200px) {
         flex-direction: column;
@@ -74,7 +75,7 @@
     .app__profile-image{
         display: flex;
         justify-content: space-between;
-        align-items: end;
+        //align-items: center;
         position: relative;
         
         .profile{
