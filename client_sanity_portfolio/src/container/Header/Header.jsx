@@ -53,12 +53,10 @@ const Header = () => {
           initial={{
             opacity: 0,
             scale: 0,
-            width: '100%'
           }}
           whileInView={{
             scale: 1,
             opacity: 1,
-            width: '100%'
           }}
           transition={{
             duration: 1,

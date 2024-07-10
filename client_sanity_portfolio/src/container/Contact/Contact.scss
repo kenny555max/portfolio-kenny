@@ -35,7 +35,8 @@
 
         div{
             min-height: 70px;
-            width: 350px;
+            max-width: 350px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;

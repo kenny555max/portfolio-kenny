@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar/Navbar";
-import { Header, About, Work, Skill, Testimonials, Contact } from "./container";
+import { Header, About, Work, Skill, Contact } from "./container";
 
 function App() {
   return (
@@ -9,7 +9,9 @@ function App() {
       <About />
       <Work />
       <Skill />
-      <Testimonials />
+      {/**
+        <Testimonials />
+      */}
       <Contact />
     </div>
   )

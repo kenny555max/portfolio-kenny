@@ -3,6 +3,15 @@
     max-height: auto;
     position: relative;
 
+    @media screen and (max-width: 768px) {
+        .app__social__media-icons{
+            display: none;
+        }
+        .app__navigations-dots{
+            display: none !important;
+        }
+    }
+
     .app__social__media-icons{
         position: absolute;
         left: 2rem;
