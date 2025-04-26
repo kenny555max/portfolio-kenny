@@ -153,7 +153,8 @@ const Skill = () => {
               }}
               style={{
                 display: 'flex',
-                columnGap: '2rem'
+                columnGap: '2rem',
+                marginBottom: '2rem'
               }}
               whileInView={{
                 y: 0,
@@ -214,7 +215,7 @@ const Skill = () => {
                 ease: 'easeOut'
               }}
             >
-              <h3>2024</h3>
+              <h3>2025</h3>
               <div>
                 <h3>Acting Lead Engineer</h3>
                 <small>Digimall - Ecommerce Ltd</small>
