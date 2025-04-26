@@ -170,6 +170,54 @@ const Skill = () => {
                 <small>PAYBUYMAX</small>
               </div>
             </motion.div>
+            <motion.div
+              initial={{
+                y: 100,
+                opacity: 0
+              }}
+              style={{
+                display: 'flex',
+                columnGap: '2rem'
+              }}
+              whileInView={{
+                y: 0,
+                opacity: 1
+              }}
+              transition={{
+                duration: 0.5,
+                ease: 'easeOut'
+              }}
+            >
+              <h3>2022</h3>
+              <div>
+                <h3>Senior FrontEnd Engineer</h3>
+                <small>TantaInnovatives</small>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{
+                y: 100,
+                opacity: 0
+              }}
+              style={{
+                display: 'flex',
+                columnGap: '2rem'
+              }}
+              whileInView={{
+                y: 0,
+                opacity: 1
+              }}
+              transition={{
+                duration: 0.5,
+                ease: 'easeOut'
+              }}
+            >
+              <h3>2022</h3>
+              <div>
+                <h3>Acting Lead Engineer</h3>
+                <small>Digimall - Ecommerce Ltd</small>
+              </div>
+            </motion.div>
           </div>
         </div>
     </div>
