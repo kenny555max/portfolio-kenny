@@ -41,7 +41,7 @@ const Header = () => {
           }}
         >
           <h5>web developer</h5>
-          <h5>freelancer</h5>
+          <h5>FullStack</h5>
         </motion.div>
       </div>
       <div className='app__profile-image'>
